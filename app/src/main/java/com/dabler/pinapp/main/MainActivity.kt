@@ -35,10 +35,10 @@ class MainActivity : AppCompatActivity(), MainView {
         Toast.makeText(this, "Pin should have at least 4 digits.", Toast.LENGTH_SHORT).show()
     }
 
-    override fun onStop() {
-        super.onStop()
+    override fun onDestroy() {
         presenter?.detachView()
         presenter = null
+        super.onDestroy()
     }
 
     private fun initializeViews() {

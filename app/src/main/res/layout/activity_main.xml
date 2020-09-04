@@ -37,5 +37,6 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/result_text_view_text_size"
         android:text=""
+        android:freezesText="true"
         android:layout_gravity="center_horizontal" />
 </LinearLayout>
